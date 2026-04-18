@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeJustSellThingsReally</title>
+  <meta name="description" content="WeJustSellThingsReally helps customers discover products across multiple online platforms with a worldwide fulfillment focus." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --soft: #1f2937;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #22c55e;
+      --accent-2: #38bdf8;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #020617 0%, #0f172a 55%, #111827 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      background: rgba(2, 6, 23, 0.72);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .hero {
+      padding: 84px 0 64px;
+      text-align: center;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      background: rgba(56, 189, 248, 0.12);
+      color: #bae6fd;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0 auto 16px;
+      max-width: 900px;
+      font-size: clamp(2.2rem, 6vw, 4.4rem);
+      line-height: 1.08;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: 0.2s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #052e16;
+    }
+
+    .btn-primary:hover { transform: translateY(-1px); }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.04);
+      border-color: var(--border);
+      color: var(--text);
+    }
+
+    section {
+      padding: 34px 0;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+      background: rgba(17, 24, 39, 0.88);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card p, .card li {
+      color: var(--muted);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .contact-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      padding: 26px 0 40px;
+      margin-top: 28px;
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      .grid-3,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">WeJustSellThingsReally</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="pill">Worldwide Product Sourcing • Multi-Platform Selling</div>
+        <h1>Helping customers discover products across multiple online platforms worldwide.</h1>
+        <p>
+          WeJustSellThingsReally focuses on sourcing trending and practical products, managing listings across online marketplaces,
+          and making worldwide product access more convenient for customers.
+        </p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#contact">Work With Us</a>
+          <a class="btn btn-secondary" href="#about">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-subtitle">
+          WeJustSellThingsReally is a growing e-commerce business focused on identifying products customers want and making them available across multiple online selling channels.
+        </p>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Global Reach</h3>
+            <p>We focus on reaching customers across different regions through online marketplace distribution and scalable fulfillment strategies.</p>
+          </div>
+          <div class="card">
+            <h3>Multi-Platform Selling</h3>
+            <p>Our business is built around product listing, optimization, and management across multiple e-commerce platforms.</p>
+          </div>
+          <div class="card">
+            <h3>Efficient Operations</h3>
+            <p>We use streamlined digital workflows to improve listing speed, product organization, and day-to-day store management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">What We Focus On</h2>
+        <p class="section-subtitle">A simple overview of the services and workflow behind the business.</p>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Core Business Areas</h3>
+            <ul>
+              <li>Product sourcing and product research</li>
+              <li>Marketplace listing creation and optimization</li>
+              <li>Storefront management across multiple platforms</li>
+              <li>Customer-focused product presentation</li>
+              <li>Worldwide online selling support</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>How We Work</h3>
+            <ul>
+              <li>Identify products with marketplace demand</li>
+              <li>Create clear listings with organized product details</li>
+              <li>Maintain consistency across platforms</li>
+              <li>Improve workflow efficiency with software and automation tools</li>
+              <li>Support growth through scalable e-commerce operations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-subtitle">Built for flexibility, reach, and efficient online selling.</p>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Flexible Product Strategy</h3>
+            <p>We adapt to product trends and customer demand while keeping operations organized and responsive.</p>
+          </div>
+          <div class="card">
+            <h3>Platform-Aware Listings</h3>
+            <p>We understand that each marketplace has different listing requirements, workflows, and optimization needs.</p>
+          </div>
+          <div class="card">
+            <h3>Growth-Oriented Mindset</h3>
+            <p>Our goal is to keep improving systems, expand product reach, and serve customers across more channels over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="card contact-box">
+          <div>
+            <h2 style="margin-top:0; margin-bottom:8px;">Contact</h2>
+            <p style="margin:0; color:var(--muted);">For business inquiries, partnership questions, or platform-related support, contact us by email.</p>
+          </div>
+          <a class="btn btn-primary" href="mailto:contact@wejustsellthingsreally.com">contact@wejustsellthingsreally.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 WeJustSellThingsReally. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
